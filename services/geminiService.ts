@@ -83,7 +83,7 @@ export const generateRecommendation = async (resume: string, positionInfo: strin
 
   try {
     const response: GenerateContentResponse = await ai.models.generateContent({
-      model: 'gemini-2.5-flash-preview-04-17',
+      model: 'gemini-2.5-flash-lite-preview-06-17',
       contents: prompt,
     });
     
