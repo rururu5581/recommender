@@ -43,7 +43,9 @@ const OutputSection: React.FC<OutputSectionProps> = ({ generatedText, isLoading,
       <label className="block text-sm font-medium text-gray-700 mb-1">
         生成された推薦文
       </label>
-      <div className="relative flex-grow border border-gray-300 rounded-md bg-gray-50 p-4 overflow-y-auto">
+      <div className="relative flex-grow border border-gray-300 rounded-md bg-gray-50 p-4 overflow-y-auto"
+           style={{ maxHeight: 'calc(100vh - 200px)' }} // ← この行を追加または調整
+      >
         {isLoading && (
           <div className="absolute inset-0 flex items-center justify-center bg-white/70">
             <Spinner />
